@@ -127,18 +127,18 @@ void adjust(int array[], int size)
 
 void insertion_sort(int array[], int size)
 {
-    int i, element, j;
-
-    for (i = 1; i < size; i++)
-    {
-        element = array[i]; j = i - 1;
-        while (j >= 0 && array[j] > element)
-        {
-            array[j + 1] = array[j];
-            j = j - 1;
-        }
-        array[j + 1] = element;
-    }
+	int i, element, j;
+	
+	for (i = 1; i < size; i++)
+	{
+		element = array[i]; j = i - 1;
+		while (j >= 0 && array[j] > element)
+		{
+			array[j + 1] = array[j];
+			j = j - 1;
+		}
+		array[j + 1] = element;
+  }
 
 }
 
@@ -146,7 +146,8 @@ void merge_sort(int i, int j, int array[], int aux[])
 {
     int mid, pointer_left, pointer_right, loop_ctr;
 
-    if (j <= i) {
+    if (j <= i) 
+		{
       // if the subsection is empty or a single element
       return;
     }
