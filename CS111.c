@@ -138,8 +138,7 @@ void insertion_sort(int array[], int size)
 			j = j - 1;
 		}
 		array[j + 1] = element;
-  }
-
+	}
 }
 
 void merge_sort(int i, int j, int array[], int aux[])
